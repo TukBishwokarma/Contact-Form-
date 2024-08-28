@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form using JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7432e1cc6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="contactForm" onsubmit="sendEmail(); return false;">
+            <h3>GET IN TOUCH</h3>
+            <label for="name"><i class="fa-solid fa-user"></i>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </label>
+            <label for="email">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" id="email" placeholder="Email id" required>
+            </label>
+            <label for="phone">
+                <i class="fa-solid fa-phone"></i>
+                <input type="text" id="phone" placeholder="Phone no." required>
+            </label>
+            <label for="message">
+                <textarea id="message" rows="3" placeholder="How can we help you?"></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+   
+</body>
+</html>
